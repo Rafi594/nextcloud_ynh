@@ -137,7 +137,7 @@ _exec_occ() {
 }
 
 # Ajout des droits pour le script
-sudo chmod +x /upgrade.d/upgrade.$actual_major_version.sh
+sudo chmod +x /upgrade.d/upgrade.11.sh
 
 # Effectue les mises à majeures une à une. Le saut de mise à jour n'étant pas supporté.
 major_version=${LAST_VERSION%%.*}	# La version majeure correspond à la première partie du numéro de version.
