@@ -136,6 +136,8 @@ _exec_occ() {
   exec_occ "$DESTDIR" "$app" $@	# Appel de php occ avec les droits de l'user nextcloud. A noter que ce n'est là que la déclaration de la fonction qui sera appelée plus tard.
 }
 
+# Ajout des droits pour le script
+sudo chmod +x /upgrade.d/upgrade.$actual_major_version.sh
 
 # Effectue les mises à majeures une à une. Le saut de mise à jour n'étant pas supporté.
 major_version=${LAST_VERSION%%.*}	# La version majeure correspond à la première partie du numéro de version.
